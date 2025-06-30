@@ -121,17 +121,33 @@ document.addEventListener('DOMContentLoaded', () => {
 // Typing effect for hero title that preserves HTML tags
 function typeWriterHTML(element, html, speed = 100) {
     let i = 0;
-    let isTag = false;
     let text = '';
+    let tagBuffer = '';
+    let isTag = false;
 
     function type() {
         if (i < html.length) {
-            if (html[i] === '<') isTag = true;
-            text += html[i];
-            if (html[i] === '>') isTag = false;
-            element.innerHTML = text;
-            i++;
-            setTimeout(type, isTag ? 0 : speed);
+            if (html[i] === '<') {
+                isTag = true;
+                tagBuffer = '<';
+                i++;
+                while (i < html.length && html[i] !== '>') {
+                    tagBuffer += html[i];
+                    i++;
+                }
+                if (i < html.length && html[i] === '>') {
+                    tagBuffer += '>';
+                    i++;
+                }
+                text += tagBuffer;
+                element.innerHTML = text;
+                setTimeout(type, 0); // No delay for tags
+            } else {
+                text += html[i];
+                element.innerHTML = text;
+                i++;
+                setTimeout(type, speed);
+            }
         }
     }
     type();
