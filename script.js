@@ -61,35 +61,33 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Form submission handling
+// Form submission handling for Formspree
 const contactForm = document.querySelector('.contact-form form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+        // Let Formspree handle the submission
+        // We'll add a loading state and success feedback
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
         
-        // Get form data
-        const formData = new FormData(this);
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const message = this.querySelector('textarea').value;
+        // Show loading state
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
         
-        // Simple validation
-        if (!name || !email || !message) {
-            alert('Please fill in all fields');
-            return;
-        }
-        
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert('Please enter a valid email address');
-            return;
-        }
-        
-        // Here you would typically send the form data to a server
-        // For now, we'll just show a success message
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        this.reset();
+        // Formspree will handle the submission automatically
+        // We'll reset the form after a short delay to simulate success
+        setTimeout(() => {
+            this.reset();
+            submitButton.textContent = 'Message Sent!';
+            submitButton.style.backgroundColor = '#10b981';
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+                submitButton.style.backgroundColor = '';
+            }, 3000);
+        }, 1000);
     });
 }
 
