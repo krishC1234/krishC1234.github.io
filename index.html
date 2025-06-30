@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Developer Portfolio - Professional web developer specializing in modern web technologies">
+    <meta name="keywords" content="software developer, web developer, full-stack developer, JavaScript, React, Node.js">
+    <title>Krish Chaudhary - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Krish Chaudhary</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Krish Chaudhary</span>
+                </h1>
+                <h2 class="hero-subtitle">Software Developer & ML Engineer</h2>
+                <p class="hero-description">
+                    MS in Computer and Information Science @ UPenn | BS in Computer Science @ UCSB<br>
+                    Passionate about building scalable, intelligent software and solving real-world problems with code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="headshot.jpeg" alt="Krish Chaudhary Headshot" class="profile-headshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        My interests in the field of Computer Science are deep learning, computer security, and quantum computing. I believe the most important thing technology can do is improve the community, so I strive to apply my skills and knowledge to the most pressing problems. In my free time, I like cooking, playing guitar, working out, or surfing.
+                    </p>
+                    <p>
+                        I'm a software developer and machine learning engineer with experience in SaaS, healthcare AI, consulting, and teaching. I love building robust, scalable systems and collaborating with cross-functional teams to deliver impactful solutions.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2</h3>
+                            <p>Degrees (UPenn, UCSB)</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Anomalous Transaction Detection (AppFolio)</h3>
+                        <p>Built a fraud detection system for SaaS real estate platform, achieving 92% accuracy. Integrated with production APIs and led A/B testing for validation.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Machine Learning</span><span>APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Medical Chatbot (Syncopation AI)</h3>
+                        <p>Led a team to develop a medical chatbot using Agency Swarm framework for autonomous multi-AI agent communication. Promoted to Computer Vision team for flagship product testing.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>AI</span><span>Agency Swarm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>DevOps & Data Science Consulting (Dataverse Solutions)</h3>
+                        <p>Automated reporting, managed CI/CD pipelines, and deployed scalable infrastructure for clients using SQL, PowerBI, Snowflake, Jenkins, Ansible, Terraform, AWS, Docker, and Kubernetes.</p>
+                        <div class="project-tech">
+                            <span>DevOps</span><span>SQL</span><span>Kubernetes</span><span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Undergraduate Learning Assistant</h3>
+                        <h4>UC Santa Barbara</h4>
+                        <p class="timeline-date">Dec 2024 – Mar 2025</p>
+                        <p>Teaching assistant for CS 176A (Computer Communication Networking). Helped students with homework assignments, test preparation, and general course questions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Undergraduate Peer Mentor</h3>
+                        <h4>UC Santa Barbara</h4>
+                        <p class="timeline-date">Sep 2022 – Mar 2025</p>
+                        <p>Supported freshmen CS and ChemE students by offering advice and guidance through the complexities of entering college.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Machine Learning Engineer (UCSB CS Capstone)</h3>
+                        <h4>AppFolio, Santa Barbara, CA</h4>
+                        <p class="timeline-date">Oct 2024 – Mar 2025</p>
+                        <p>Built an anomalous transaction detection software for early detection of fraudulent activity with an accuracy of 92%. Worked as the ML engineer to develop an end-to-end pipeline for model development, deployment, and retraining. Collaborated with backend team to integrate into production APIs and conducted A/B testing to validate performance.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Software Engineer Intern</h3>
+                        <h4>Syncopation AI, Mountain View, CA</h4>
+                        <p class="timeline-date">Jun 2024 – Sep 2024</p>
+                        <p>Led a team to develop a differential diagnosis agentic chatbot using the Agency Swarm framework and OpenAI's LLMs. Designed a chatbot to request patient symptoms, provide a diagnosis with potential causes, and query private health records. Promoted to Computer Vision team to test company flagship product—patient monitoring algorithms.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Science Consultant</h3>
+                        <h4>Dataverse Solutions Pvt Ltd</h4>
+                        <p class="timeline-date">Jun 2023 – Aug 2024</p>
+                        <p>Worked with the Greenheck Group to generate insights from company data using SQL, PowerBI, Snowflake, and ML scripts. Managed CI/CD pipelines, designed and deployed Kubernetes clusters and Docker containerized microservices for optimized, scalable infrastructure. Improved SQL querying and updating data, saving hundreds of hours of manual labor in reporting data to Latin American clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Researcher, Early Research Scholars Program (UCSB Security Lab)</h3>
+                        <h4>University of California, Santa Barbara</h4>
+                        <p class="timeline-date">Sep 2022 – Sep 2023</p>
+                        <p>Developed a decoy system that mimicked a real website riddled with carefully designed faults to attract malicious attackers. Exposed potential flaws in microservice technology—around 30,000 attacks detected. Categorized malicious requests and presented findings at the 2023 ERSP National Conference.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-cards">
+          <div class="education-card">
+            <div class="edu-header">
+              <img src="upenn_logo.png" alt="UPenn Logo" class="edu-logo">
+              <h3>University of Pennsylvania</h3>
+            </div>
+            <p class="edu-degree">Master of Science (MS), Computer and Information Science</p>
+            <p class="edu-date">Jun 2025 – May 2027</p>
+          </div>
+          <div class="education-card">
+            <div class="edu-header">
+              <img src="ucsb_logo.png" alt="UCSB Logo" class="edu-logo">
+              <h3>UC Santa Barbara</h3>
+            </div>
+            <p class="edu-degree">Bachelor of Science, Computer Science</p>
+            <p class="edu-date">Jun 2021 – May 2025</p>
+            <p class="edu-desc">Activities and societies: CodeRiss, Institute of Electrical and Electronics Engineers, UCSB Early Research Scholars Program (2022–2023), Technology Management Program</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors & Awards Section -->
+    <section id="honors" class="honors">
+      <div class="container">
+        <h2 class="section-title">Honors & Awards</h2>
+        <div class="honors-highlight-list">
+          <div class="honor-highlight">
+            <div class="honor-title"><strong>Distinction in the Major (Candidate)</strong> <span class="honor-meta">— UC Santa Barbara (Jun 2024)</span></div>
+            <div class="honor-desc">The Distinction in the Major Program (DIMAP) is a high honor in recognition of the academic scholastic achievement of students for working on projects outside of and beyond the CS major degree requirements.</div>
+          </div>
+          <div class="honor-highlight">
+            <div class="honor-title"><strong>2nd place at the Spring 2022 Blockchain Project Series</strong> <span class="honor-meta">— FTX and Coders SB (Jun 2022)</span></div>
+            <div class="honor-desc">Our team won a cash prize for getting second place at the Spring 2022 Blockchain Project Series for our Cryptaid web3 project. We used the money to continue to build upon Cryptaid in the future.</div>
+          </div>
+          <div class="honor-highlight">
+            <div class="honor-title"><strong>Top 10 at the 2020 UCSB ICPC Coding Contest</strong> <span class="honor-meta">— UC Santa Barbara (Dec 2020)</span></div>
+            <div class="honor-desc">We were among the top 10 contestants to place within the competition, where we were able to solve numerous questions from the Nordic Collegiate Programming Contest. <a href="https://open.kattis.com/contests/say2x7m" target="_blank">Contest sheet</a></div>
+          </div>
+          <div class="honor-highlight">
+            <div class="honor-title"><strong>Beta-Bowl 2020 Pitch Expo Competition Finalist</strong> <span class="honor-meta">— Beta-Bowl (Jan 2021)</span></div>
+            <div class="honor-desc">Selected as a finalist in the pitch competition out of hundreds of entries in the 2020 Beta Bowl Pitch Expo Competition. As a result, I've come into contact with a few investors who may be interested in sponsoring my business idea in the future.</div>
+          </div>
+          <div class="honor-highlight">
+            <div class="honor-title"><strong>President Volunteer's Service Award: Gold</strong> <span class="honor-meta">— President of the U.S. / Saratoga High School (May 2020)</span></div>
+            <div class="honor-desc">Gold President's Volunteer Service Award. The President's Volunteer Service Award is a civil award bestowed by the President of the United States. Hundreds of hours per year helping others through the President's Council on Service and Civic Participation. The gold medal indicates over 300 hours of volunteering in 2020.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technologies Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>C++</span></div>
+                        <div class="skill-item"><span>C#</span></div>
+                        <div class="skill-item"><span>Python</span></div>
+                        <div class="skill-item"><span>SQL</span></div>
+                        <div class="skill-item"><span>Java</span></div>
+                        <div class="skill-item"><span>HTML</span></div>
+                        <div class="skill-item"><span>CSS</span></div>
+                        <div class="skill-item"><span>JavaScript</span></div>
+                        <div class="skill-item"><span>Typescript</span></div>
+                        <div class="skill-item"><span>Go</span></div>
+                        <div class="skill-item"><span>Ruby</span></div>
+                        <div class="skill-item"><span>PHP</span></div>
+                        <div class="skill-item"><span>R</span></div>
+                        <div class="skill-item"><span>Swift</span></div>
+                        <div class="skill-item"><span>Bash</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>React</span></div>
+                        <div class="skill-item"><span>Next.js</span></div>
+                        <div class="skill-item"><span>PyTorch</span></div>
+                        <div class="skill-item"><span>Docker</span></div>
+                        <div class="skill-item"><span>Kubernetes</span></div>
+                        <div class="skill-item"><span>AWS</span></div>
+                        <div class="skill-item"><span>Jenkins</span></div>
+                        <div class="skill-item"><span>PostgreSQL</span></div>
+                        <div class="skill-item"><span>MongoDB</span></div>
+                        <div class="skill-item"><span>REST APIs</span></div>
+                        <div class="skill-item"><span>Arduino</span></div>
+                        <div class="skill-item"><span>Selenium</span></div>
+                        <div class="skill-item"><span>AngularJS</span></div>
+                        <div class="skill-item"><span>.NET Core</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Certifications & Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>Certified Associate in Python Programming</span></div>
+                        <div class="skill-item"><span>Oracle Certified Java SE 8 Programmer</span></div>
+                        <div class="skill-item"><span>Blockchain Fundamentals</span></div>
+                        <div class="skill-item"><span>English (Advanced)</span></div>
+                        <div class="skill-item"><span>Hindi (Proficient)</span></div>
+                        <div class="skill-item"><span>Spanish (Intermediate)</span></div>
+                        <div class="skill-item"><span>Oracle Database SQL Certified Associate (Oracle, Aug 2023)</span></div>
+                        <div class="skill-item"><span>PCAP – Certified Associate in Python Programming (Python Institute, May 2020)</span></div>
+                        <div class="skill-item"><span>Stanford Silicon Valley Innovation Academy Program (Stanford University, Aug 2019)</span></div>
+                        <div class="skill-item"><span>Oracle Certified Associate (OCA) Java SE 8 Programmer (Oracle, Jul 2019)</span></div>
+                        <div class="skill-item"><span>Blockchain Fundamentals Professional Certificate (UC Berkeley)</span></div>
+                        <div class="skill-item"><span>IBM Data Science Professional Certificate (IBM)</span></div>
+                        <div class="skill-item"><span>LaunchX: Becoming an Entrepreneur (MIT)</span></div>
+                        <div class="skill-item"><span>M001: MongoDB Basics (MongoDB)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just want to say hello.</p>
+                    <div class="contact-links">
+                        <a href="mailto:Krish.sfo.ca@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            Krish.sfo.ca@gmail.com
+                        </a>
+                        <a href="https://github.com/krishC1234" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            github.com/krishC1234
+                        </a>
+                        <a href="https://linkedin.com/in/krish-chaudhary" class="contact-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            linkedin.com/in/krish-chaudhary
+                        </a>
+                        <span class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            (650) 445-2674
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Krish Chaudhary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
